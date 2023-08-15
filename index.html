@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Learning the Forms</title>
+  </head>
+  <body>
+    <h1>Hello, Forms!</h1>
+    <form action="/form-handling-url" method="post">
+      <fieldset>
+        <legend>Add User</legend>
+        <div>
+          <label for="firstName">First Name</label>
+          <input type="text" id="firstName" name="firstName" />
+        </div>
+        <div>
+          <label for="lastName">Last Name</label>
+          <input type="text" id="lastName" name="last name" />
+        </div>
+        <div>
+          <label for="email">Email</label>
+          <input type="email" id="email" name="email" />
+        </div>
+        <div>
+          <label for="status">Status</label>
+          <select id="status" name="user_status">
+            <option value="student">Student</option>
+            <option value="instructor">Instructor</option>
+            <option value="guest">Guest</option>
+          </select>
+        </div>
+        <div>
+         <p>Choose your favorite programming language:</p>
+          <button type = "radio">HTML</button>
+          <button type = "radio">CSS</button>
+          <button type = "radio">JavaScript</button>
+        </div>
+        <div>
+          <label for="comments">Comments</label>
+          <textarea id="comments" name="comments">textarea</textarea>
+        </div>
+        <div>
+          <label for="date">Current Date</label>
+          <input type="date" id="date" name="date" />
+        </div>
+        <div>
+          <label for="signup">Sign up for newsletter</label>
+          <input type="checkbox" id="signup" name="signup" />
+        </div> 
+         <div>
+          <label for="agree">Agree to terms and conditions</label>
+          <input type="checkbox" id="agree" name="agree" />
+        </div>    
+        <div>
+          <button type="submit">Submit</button>
+        </div>
+      </fieldset>
+    </form>
+  </body>
+</html>
